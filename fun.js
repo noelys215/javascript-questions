@@ -51,3 +51,15 @@ function test() {
 
 const obj = test();
 console.log(obj);
+
+//* Difference between Rest and Spread
+/* 
+1. Can we use arguments object in arrow function
+.- NO, only in traditional ways of writing functions ie declarations
+2. Which is the best way to create a new array with assignments
+.- Using the spread operator
+3. How can you handle the "n" number of params passed to a function
+.- use Spread operator 
+4. Can the rest operator be placed anywhere in the function param list?
+.- We cannot have rest param in the beginning of the param list, must be at end.
+*/
