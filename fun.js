@@ -50,7 +50,6 @@ function test() {
 }
 
 const obj = test();
-console.log(obj);
 
 //* Difference between Rest and Spread
 /* 
@@ -62,4 +61,19 @@ console.log(obj);
 .- use Spread operator 
 4. Can the rest operator be placed anywhere in the function param list?
 .- We cannot have rest param in the beginning of the param list, must be at end.
+*/
+
+//* Infinity vs -Infinity
+/* 
+1. What will be the output; console.log(1/0)
+.- Infinity
+*/
+
+//* When do you get NaN as output
+/* 
+1. What's the output? console.log(Nan===Nan)
+.- False
+2. What's the difference between isNan() & isFinite()
+.- isNan() checks whether value is Not-A-Number 0r not
+.- isFinite() checks for NaN as well as Infinity values
 */
