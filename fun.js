@@ -149,3 +149,31 @@ console.log(gObj.next());
 5. Can you prevent return() from terminating the generator?
 .- Yes, via try catch; switch cases or if statements
 */
+
+//* Memory Management | Garbage Collection
+/* 
+?1. How does Garbage Collection work in javascript?    
+.- "Mark and Sweep" algorithm is used, will start from the global object and mark reference values
+and clears unreachable values or locations.
+?2. Explain Mark and Sweep algorithm. 
+.- It begins with the root element and starts marking referenced values, and clearing unreferenced values.
+?3. Which situation can create a memory leak?
+.- When theres a circular reference, and one object is set to null; losing the reference. doesn't occur in newer browsers.
+*/
+
+//* Error Handling
+/* 
+?1. When do you need try catch
+.- At runtime when a code is executed and a portion needs to  be managed properly 
+so the program doesn't stop running.
+?2. How can you generate an error
+.- By using throw new Error class
+?3. Can you generate Syntax or Reference Errors?
+.- Yes, via throw statement
+?4. Whats the purpose of the finally block?
+.- It contains the code thats always executed regardless of error.
+?5. How can you refer to the name or description of error?
+.- Using the passed argument followed by .name or .message; err.name err.message
+?6. Can we have a finally block without catch block?
+.- Yes; catch block not entirely necessary
+*/
