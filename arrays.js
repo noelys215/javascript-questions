@@ -94,7 +94,6 @@ console.log(prods);
 //* Destructuring
 let distro = [80, 90, 93, 26];
 let [a, , c, d] = distro;
-console.log(a, b);
 
 /* 
 ?1. what is destructing
