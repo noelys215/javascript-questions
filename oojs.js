@@ -106,8 +106,6 @@ console.log(obj5.toUpperCase());
 /* 
 ?1. Why destructure object?
 .-  Useful when only certain data retrieved is needed from a large data file.
-?2. 
-.- 
 */
 
 //* Class Accessors - Getter/Setter
