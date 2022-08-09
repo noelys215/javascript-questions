@@ -269,7 +269,7 @@ const minVal = Math.min(...arr);
 
 const minArr = arr.filter((el) => el === minVal);
 
-console.log(minArr.length);
+// console.log(minArr.length);
 
 // class Employee {
 // 	constructor(id, name) {
@@ -388,7 +388,40 @@ const throttle = (fn, timeout = 300) => {
 };
 
 const processChange = throttle(saveInput, 2000);
-processChange('foo');
+// processChange('foo');
 
-processChange('foo');
-processChange('foo');
+// processChange('foo');
+// processChange('foo');
+
+//* Highlight all words over 8 chars with yellow
+const para = document.querySelector('p');
+const link = document.createElement('a');
+
+para.innerHTML = para.innerHTML
+	.split(' ')
+	.map((word) =>
+		word.length > 8 ? `<span style="background-color: yellow">${word}</span>` : word
+	)
+	.join(' ');
+
+// Add a link to the source after paragraph text
+link.href = 'http://forcemipsum.com';
+link.innerText = 'Lorem Text';
+document.body.appendChild(link);
+
+// Split each sentence into a new line
+
+para.innerHTML = para.innerHTML.split(/\.[^.|<]/).join('. <p></p>') + '</p>';
+
+// Implement a click on todo item
+
+const listItem = document.querySelectorAll('li');
+const listParent = document.querySelector('.todo-app');
+
+listParent.addEventListener('click', (e) => {
+	if (e.target && e.target.classList.contains('item')) {
+		console.log(e.target.innerText);
+	}
+});
+
+// listItem.forEach((item) => item.addEventListener('click', () => console.log(item.innerText)));
